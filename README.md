@@ -20,17 +20,17 @@ And of course all the code produced by the team is open source with a [public re
 
 ### Running
 
-Using Eclipse:
-1. open src/util/StartServer.java and execute it
-2. open src/util/StartTeams.java and execute it
-3. Select the StartServer console and press ENTER to start the simulation
-4. open and run src/util/StartMonitor.java **(optional)**
+Using Eclipse:  
+1. open src/util/StartServer.java and execute it  
+2. open src/util/StartTeams.java and execute it  
+3. Select the StartServer console and press ENTER to start the simulation  
+4. open and run src/util/StartMonitor.java **(optional)**.
 
-Using Ant (each command should be executaed in a different terminal):
-1. *ant server*
-2. *ant java-team*
-3. *ant jcm-team*
-4. *ant monitor* **(optional)**
+Using Ant (each command should be executed in a different terminal):  
+1. *ant server*  
+2. *ant java-team*  
+3. *ant jcm-team*  
+4. *ant monitor* **(optional)**.
 
 License
 ----
