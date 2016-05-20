@@ -5,16 +5,16 @@
 // register this agent into the MAPC server (simulator) using a personal interface artifact
 +!register_EIS(E)
 <-  
-    .my_name(Me);
-    .concat("perso_art_",Me,AName);
-    makeArtifact(AName,"pucrs.agentcontest2015.env.EISArtifact",[],AId);
-    focus(AId);
-    registerEISEntity(E);
+	.my_name(Me);
+	.concat("perso_art_",Me,AName);
+	makeArtifact(AName,"usp.mapc.g1.env.EISArtifact",[],AId);
+	focus(AId);
+	registerEISEntity(E);
 . 
 
 +!register_freeconn
 <-	
-    .print("Registering...");
+  .print("Registering...");
 	registerFreeconn;
 .
 
