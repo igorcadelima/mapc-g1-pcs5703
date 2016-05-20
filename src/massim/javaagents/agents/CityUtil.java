@@ -2,8 +2,6 @@ package massim.javaagents.agents;
 
 import eis.iilang.Action;
 import eis.iilang.Identifier;
-import eis.iilang.Parameter;
-import eis.iilang.Percept;
 
 /**
  * Created by ta10 on 09.04.15.

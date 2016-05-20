@@ -5,8 +5,6 @@ import java.io.IOException;
 import eis.EILoader;
 import eis.EnvironmentInterfaceStandard;
 import eis.exceptions.ManagementException;
-import eis.exceptions.NoEnvironmentException;
-import eis.exceptions.PerceiveException;
 
 /**
  * This app instantiates an interpreter (loading agents),
@@ -58,6 +56,7 @@ public class App {
 		//  run stepwise
 //		System.out.println("");
 //		System.out.println("PHASE 4: RUNNING");
+		@SuppressWarnings("unused")
 		int step = 1;
 		boolean running = true;
 		while ( running ) {

@@ -381,7 +381,7 @@ public class AgentsInterpreter implements Interpreter,AgentListener,EnvironmentL
 		
 		// print mental state
 		if ( verbose == true ) {
-			for ( Agent ag : agents.values() ) {
+			for ( @SuppressWarnings("unused") Agent ag : agents.values() ) {
 //				System.out.println("Agent \"" + ag.getName() + "\"");
 //				System.out.println("  beliefs: " + ag.getBeliefBase());
 //				System.out.println("  goals: " + ag.getGoalBase());
