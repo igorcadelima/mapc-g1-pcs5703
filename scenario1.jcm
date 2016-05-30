@@ -12,36 +12,6 @@
  *    - tool1: drone
  *    - tool2: car
  *    - tool3: motorcycle
- * 
- * Overall plans:
- * 
- * Vehicle1 (the car): 
- *    - goes to some shop to buy tool2
- *    - goes to workshop1
- *    - wait others
- *    - assemble material3
- *    - delivery
- * 
- * Vehicle2 (the drone):
- *    - buys too1
- *    - buys base1
- *    - assemble material1
- *    - buys base1
- *    - assemble another material1
- *    - goes to workshop1
- *    - helps vehicle 1 to assemble material 3 
- *  
- * Vehicle3 (the motorcycle):
- *    - buys too3
- *    - buys base2
- *    - goes to workshop1
- *    - helps vehicle 1 to assemble material 3
- *  
- * Vehicle4 (the truck):
- *    - buys base3
- *    - goes to workshop1
- *    - helps vehicle 1 to assemble material 3
- *  
  */ 
 
 mas scenario1 {
@@ -58,53 +28,53 @@ mas scenario1 {
 	agent vehicle4: vehicle.asl {
 		goals: register_EIS("connectionA4")
 	}	
-	agent vehicle5: vehicle.asl {
-		goals: register_EIS("connectionA5")
-	}
-	agent vehicle6: vehicle.asl {
-		goals: register_EIS("connectionA6")
-	}
-	agent vehicle7: vehicle.asl {
-		goals: register_EIS("connectionA7")
-	}
-	agent vehicle8: vehicle.asl {
-		goals: register_EIS("connectionA8")
-	}		
-	agent vehicle9: vehicle.asl {
-		goals: register_EIS("connectionA9")
-	}
-	agent vehicle10: vehicle.asl {
-		goals: register_EIS("connectionA10")
-	}
-	agent vehicle11: vehicle.asl {
-		goals: register_EIS("connectionA11")
-	}
-	agent vehicle12: vehicle.asl {
-		goals: register_EIS("connectionA12")
-	}	
-	agent vehicle13: vehicle.asl {
-		goals: register_EIS("connectionA13")
-	}
-	agent vehicle14: vehicle.asl {
-		goals: register_EIS("connectionA14")
-	}
-	agent vehicle15: vehicle.asl {
-		goals: register_EIS("connectionA15")
-	}
-	agent vehicle16: vehicle.asl {
-		goals: register_EIS("connectionA16")
-	}	
+//	agent vehicle5: vehicle.asl {
+//		goals: register_EIS("connectionA5")
+//	}
+//	agent vehicle6: vehicle.asl {
+//		goals: register_EIS("connectionA6")
+//	}
+//	agent vehicle7: vehicle.asl {
+//		goals: register_EIS("connectionA7")
+//	}
+//	agent vehicle8: vehicle.asl {
+//		goals: register_EIS("connectionA8")
+//	}		
+//	agent vehicle9: vehicle.asl {
+//		goals: register_EIS("connectionA9")
+//	}
+//	agent vehicle10: vehicle.asl {
+//		goals: register_EIS("connectionA10")
+//	}
+//	agent vehicle11: vehicle.asl {
+//		goals: register_EIS("connectionA11")
+//	}
+//	agent vehicle12: vehicle.asl {
+//		goals: register_EIS("connectionA12")
+//	}	
+//	agent vehicle13: vehicle.asl {
+//		goals: register_EIS("connectionA13")
+//	}
+//	agent vehicle14: vehicle.asl {
+//		goals: register_EIS("connectionA14")
+//	}
+//	agent vehicle15: vehicle.asl {
+//		goals: register_EIS("connectionA15")
+//	}
+//	agent vehicle16: vehicle.asl {
+//		goals: register_EIS("connectionA16")
+//	}	
 	
     organisation mapc_org: o1.xml {    // the organisational entity is hello_org from spec o1.xml
     	group jacamo_team: team {      // instance group (jacamo_team) from spec team
     		responsible-for: mapcplay  // that will be responsible for the execution of scheme hello_sch (defined below)
-    		players: vehicle1	rv,      // the roles of the agents in this group
-    		         vehicle2	rl,
-    		         vehicle3	rc,
-    		         vehicle4	rs
+    		players: vehicle1	car,      // the roles of the agents in this group
+    		         vehicle2	drone,
+    		         vehicle3	motorcycle,
+    		         vehicle4	truck
     		debug                      // starts the organisational inspector
     	}
-    	scheme mapcplay: hello_sch {      // instance scheme (hello_eng) from spec hello_sch
+    	scheme mapcplay: mapc_sch {      // instance scheme (hello_eng) from spec hello_sch
     		debug
     	}
     }	

@@ -19,15 +19,15 @@
 
 +lastActionResult(R) : R \== none & R \== successful <- .print("Resultado da última ação: ",R).
 
-// Avisa que a bateria acabou.
-+charge(C) : C == 0 <-	.print("Acabou a bateria.",C);
-						!call_breakdown_service.
-
-+role(_,_,_,R,_).
-
-// Procedimento para carga da bateria.
-+charge(C) : C <=R/2 <-	.print("Iniciando processo de carga da bateria...");
-						!charge.
+//// Avisa que a bateria acabou.
+//+charge(C) : C == 0 <-	.print("Acabou a bateria.",C);
+//						!call_breakdown_service.
+//
+//+role(_,_,_,R,_).
+//
+//// Procedimento para carga da bateria.
+//+charge(C) : C <=R/2 <-	.print("Iniciando processo de carga da bateria...");
+//						!charge.
 
 +inFacility(FacilityId)
 <-  .my_name(Me);
