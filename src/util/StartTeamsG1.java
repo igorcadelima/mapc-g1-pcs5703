@@ -4,6 +4,9 @@ import jacamo.infra.JaCaMoLauncher;
 import jason.JasonException;
 import massim.javaagents.App;
 
+/*
+ * 
+ */
 public class StartTeamsG1 {
 
 	public static void main(String[] args) throws JasonException {

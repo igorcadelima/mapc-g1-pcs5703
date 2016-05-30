@@ -3,6 +3,9 @@ package util;
 import massim.server.Server;
 import massim.test.InvalidConfigurationException;
 
+/*
+ * 
+ */
 public class StartServerG1 {
 
 	public static void main(String[] args) throws InvalidConfigurationException {

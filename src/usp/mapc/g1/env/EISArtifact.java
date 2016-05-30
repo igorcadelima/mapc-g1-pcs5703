@@ -34,6 +34,9 @@ import eis.iilang.EnvironmentState;
 import eis.iilang.Parameter;
 import eis.iilang.Percept;
 
+/*
+ * 
+ */
 public class EISArtifact extends Artifact {
 
 	private Logger logger = null;

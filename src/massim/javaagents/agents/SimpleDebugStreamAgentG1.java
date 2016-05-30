@@ -7,8 +7,8 @@ import massim.javaagents.Agent;
 import java.io.*;
 import java.util.Collection;
 
-/**
- * Created by ta10 on 09.04.15.
+/*
+ * G1
  */
 public class SimpleDebugStreamAgentG1 extends Agent {
 

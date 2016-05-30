@@ -3,7 +3,7 @@
 { include("actions.asl") }
 { include("hello.asl") }
 
-// register this agent into the MAPC server (simulator) using a personal interface artifact
+// register this agent into the MAPC server (simulator) using a personal interface artifact.
 +!register_EIS(E)
 <-  
 	.my_name(Me);

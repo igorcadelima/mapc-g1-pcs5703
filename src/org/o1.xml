@@ -11,6 +11,7 @@
     xsi:schemaLocation='http://moise.sourceforge.net/os
                         http://moise.sourceforge.net/xml/os.xsd' >
     
+<!-- -->
 <structural-specification>
 
 <role-definitions>
