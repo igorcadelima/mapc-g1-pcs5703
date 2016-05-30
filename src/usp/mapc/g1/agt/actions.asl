@@ -167,7 +167,7 @@
 // No parameters
 +!charge
 <-
-    .print("I am going to charge my battery!");
+    .print("Estou indo carregar minha bateria!");
     .suspend(run);
     ?chargingStation(F,_,_,_,_,_);
     !goto(F,0);
