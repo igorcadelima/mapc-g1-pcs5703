@@ -1,6 +1,7 @@
 { include("common-rules.asl") }
 { include("common-plans.asl") }
 { include("actions.asl") }
+{ include("hello.asl") }
 
 // register this agent into the MAPC server (simulator) using a personal interface artifact
 +!register_EIS(E)
