@@ -8,7 +8,7 @@ import java.io.*;
 import java.util.Collection;
 
 /*
- * G1
+ * G1.
  */
 public class SimpleDebugStreamAgentG1 extends Agent {
 
