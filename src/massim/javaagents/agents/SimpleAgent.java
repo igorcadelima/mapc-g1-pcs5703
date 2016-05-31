@@ -10,7 +10,7 @@ import java.util.Collection;
 /*
  * G1.
  */
-public class SimpleDebugStreamAgentG1 extends Agent {
+public class SimpleAgent extends Agent {
 
 	private FileWriter out;
 	private BufferedReader in;
@@ -31,7 +31,7 @@ public class SimpleDebugStreamAgentG1 extends Agent {
 	 * @param name nome do agente
 	 * @param team time do agente
 	 */
-	public SimpleDebugStreamAgentG1(String name, String team) {
+	public SimpleAgent(String name, String team) {
 
 		super(name, team);
 
