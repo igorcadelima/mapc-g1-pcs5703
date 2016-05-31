@@ -65,7 +65,7 @@ mas scenario1 {
 //		goals: register_EIS("connectionA16")
 //	}	
 	
-    organisation mapc_org: o1.xml {    // the organisational entity is hello_org from spec o1.xml
+    organisation mapc_org: organization.xml {    // the organisational entity is hello_org from spec o1.xml
     	group jacamo_team: team {      // instance group (jacamo_team) from spec team
     		responsible-for: mapcplay  // that will be responsible for the execution of scheme hello_sch (defined below)
     		players: vehicle1	car,      // the roles of the agents in this group
