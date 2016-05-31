@@ -8,7 +8,8 @@ import java.io.*;
 import java.util.Collection;
 
 /*
- * G1.
+ * Classe para implementação simples de um agente. Todos os agentes instanciados 
+ * são baseados nessa classe.
  */
 public class SimpleAgent extends Agent {
 
@@ -161,17 +162,7 @@ public class SimpleAgent extends Agent {
 						println(getName() + ": Executing: " + name);
 						return lastAction = CityUtil.action(name);
 					}
-
-					/*
-					 * String[] parts = action.split(" "); name = parts[0];
-					 * if(parts.length > 1){ param = parts[1];
-					 * System.out.println(getName()+": Executing: "+name+" "
-					 * +param); return CityUtil.action(name, param); } else{
-					 * System.out.println(getName()+": Executing: "+name);
-					 * return CityUtil.action(name); }
-					 */
 				}
-
 			}
 			catch (IOException e) {
 				e.printStackTrace();
