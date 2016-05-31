@@ -23,10 +23,10 @@
 
 <group-specification id="team">
     <roles>
-        <role id="car" min="1" max="1"/>
-        <role id="drone" min="1" max="1"/>
-        <role id="motorcycle" min="1" max="1"/>
-        <role id="truck" min="1" max="1"/>
+        <role id="car" min="1" max="4"/>
+        <role id="drone" min="1" max="4"/>
+        <role id="motorcycle" min="1" max="4"/>
+        <role id="truck" min="1" max="4"/>
     </roles>
 </group-specification>
 </structural-specification>
@@ -42,19 +42,19 @@
             </plan>
         </goal>
 
-        <mission id="running_truck" min="1" max="1">
+        <mission id="running_truck" min="1" max="4">
             <goal id="runTruck"/>
         </mission>
         
-        <mission id="running_drone" min="1" max="1">
+        <mission id="running_drone" min="1" max="4">
             <goal id="runDrone"/>
         </mission>
 
-        <mission id="running_motorcycle" min="1" max="1">
+        <mission id="running_motorcycle" min="1" max="4">
             <goal id="runMotorcycle"/>
         </mission>
         
-        <mission id="running_car" min="1" max="1">
+        <mission id="running_car" min="1" max="4">
             <goal id="runCar"/>
         </mission>        
     </scheme>
