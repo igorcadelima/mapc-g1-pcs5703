@@ -11,60 +11,61 @@
     xsi:schemaLocation='http://moise.sourceforge.net/os
                         http://moise.sourceforge.net/xml/os.xsd' >
     
-<!-- -->
-<structural-specification>
-
-<role-definitions>
-    <role id="car" />
-    <role id="drone" />
-    <role id="motorcycle" />
-    <role id="truck" />
-</role-definitions>
-
-<group-specification id="team">
-    <roles>
-        <role id="car" min="1" max="4"/>
-        <role id="drone" min="1" max="4"/>
-        <role id="motorcycle" min="1" max="4"/>
-        <role id="truck" min="1" max="4"/>
-    </roles>
-</group-specification>
-</structural-specification>
-
-<functional-specification>
-    <scheme id="mapc_sch">
-        <goal id="Playing_MAPC">
-            <plan operator="parallel">
-                <goal id="runTruck"    		ttf="10 minutes" />
-                <goal id="runDrone"    		ttf="10 minutes" />
-                <goal id="runMotorcycle"    ttf="10 minutes" />
-                <goal id="runCar"    		ttf="10 minutes" />
-            </plan>
-        </goal>
-
-        <mission id="running_truck" min="1" max="4">
-            <goal id="runTruck"/>
-        </mission>
-        
-        <mission id="running_drone" min="1" max="4">
-            <goal id="runDrone"/>
-        </mission>
-
-        <mission id="running_motorcycle" min="1" max="4">
-            <goal id="runMotorcycle"/>
-        </mission>
-        
-        <mission id="running_car" min="1" max="4">
-            <goal id="runCar"/>
-        </mission>        
-    </scheme>
-</functional-specification>
-
-<normative-specification>
-    <norm id="norm1" type="obligation" role="car" mission="running_car"/>
-    <norm id="norm2" type="obligation" role="drone" mission="running_drone"/>
-    <norm id="norm3" type="obligation" role="motorcycle" mission="running_motorcycle"/>
-    <norm id="norm4" type="obligation" role="truck" mission="running_truck"/>
-</normative-specification>
+	<!-- -->
+	<structural-specification>
+	
+		<role-definitions>
+		    <role id="car" />
+		    <role id="drone" />
+		    <role id="motorcycle" />
+		    <role id="truck" />
+		</role-definitions>
+		
+		<group-specification id="team">
+		    <roles>
+		        <role id="car" min="1" max="4"/>
+		        <role id="drone" min="1" max="4"/>
+		        <role id="motorcycle" min="1" max="4"/>
+		        <role id="truck" min="1" max="4"/>
+		    </roles>
+		</group-specification>
+		
+	</structural-specification>
+	
+	<functional-specification>
+	    <scheme id="mapc_sch">
+	        <goal id="Playing_MAPC">
+	            <plan operator="parallel">
+	                <goal id="runTruck"    		ttf="10 minutes" />
+	                <goal id="runDrone"    		ttf="10 minutes" />
+	                <goal id="runMotorcycle"    ttf="10 minutes" />
+	                <goal id="runCar"    		ttf="10 minutes" />
+	            </plan>
+	        </goal>
+	
+	        <mission id="running_truck" min="1" max="4">
+	            <goal id="runTruck"/>
+	        </mission>
+	        
+	        <mission id="running_drone" min="1" max="4">
+	            <goal id="runDrone"/>
+	        </mission>
+	
+	        <mission id="running_motorcycle" min="1" max="4">
+	            <goal id="runMotorcycle"/>
+	        </mission>
+	        
+	        <mission id="running_car" min="1" max="4">
+	            <goal id="runCar"/>
+	        </mission>        
+	    </scheme>
+	</functional-specification>
+	
+	<normative-specification>
+	    <norm id="norm1" type="obligation" role="car" mission="running_car"/>
+	    <norm id="norm2" type="obligation" role="drone" mission="running_drone"/>
+	    <norm id="norm3" type="obligation" role="motorcycle" mission="running_motorcycle"/>
+	    <norm id="norm4" type="obligation" role="truck" mission="running_truck"/>
+	</normative-specification>
 
 </organisational-specification>

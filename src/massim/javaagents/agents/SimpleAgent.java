@@ -105,7 +105,6 @@ public class SimpleAgent extends Agent {
 			for (Percept p : percepts) {
 				try {
 					out.write(p.toProlog());
-					// out.write(p.toXML());
 				}
 				catch (IOException e) {
 					e.printStackTrace();
@@ -139,7 +138,7 @@ public class SimpleAgent extends Agent {
 			}
 		}
 
-		// Get action and execute it
+		// Recebe a ação e a executa.
 		if (in != null && newStep) {
 			String action, name = "", param = "";
 			try {
@@ -168,7 +167,8 @@ public class SimpleAgent extends Agent {
 				e.printStackTrace();
 			}
 		}
-		else { // no new step or input closed, retry latest action
+		// Se não recebeu outro passo, ou as entradas estão fechadas, tenta reexecutar a última ação recebida.
+		else { 
 			if (lastAction != null) {
 				println("retry last action");
 				return lastAction;
