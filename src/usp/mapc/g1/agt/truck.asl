@@ -1,15 +1,4 @@
-// specific plans for trucks
+// specific beliefs for trucks
 
-!run.
-
-+!run
-<-  !buy_item(base3,1);
-    !goto(workshop1,0);
-
-    .print("at workshop waiting to assemble...");    
-    !wait_skip( assemble_step(AS) );
-    !wait_skip( step(AS) );
-	!assist_assemble(a1);    
-
-	!skip_forever;    
-.
++charge(C) : C < 100 & not .desire(charge) <- 	.print("Sou um caminhão e estou iniciando processo de carga da bateria...");
+												!charge.

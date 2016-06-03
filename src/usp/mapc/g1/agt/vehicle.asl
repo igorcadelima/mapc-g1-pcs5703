@@ -1,8 +1,9 @@
 { include("common-rules.asl") }
 { include("common-plans.asl") }
 { include("actions.asl") }
+{ include("organization-plans.asl") }
 
-// register this agent into the MAPC server (simulator) using a personal interface artifact
+// Registra o agente no servidor da completição utilizando o artefato de interface (EISArtifact.java) 
 +!register_EIS(E)
 <-  
 	.my_name(Me);
@@ -12,12 +13,15 @@
 	registerEISEntity(E);
 . 
 
+// Necessário para registrar a comunicação.
 +!register_freeconn
 <-	
   .print("Registering...");
 	registerFreeconn;
 .
 
+// Plano para reagir ao dado do role/5 (do EISArtifact)
+// Carrega o código que foi 
 // plan to react to the signal role/5 (from EISArtifact)
 // it loads the source code for the agent's role in the simulation
 +role(Role, Speed, LoadCap, BatteryCap, Tools)

@@ -34,6 +34,9 @@ import eis.iilang.EnvironmentState;
 import eis.iilang.Parameter;
 import eis.iilang.Percept;
 
+/*
+ * 
+ */
 public class EISArtifact extends Artifact {
 
 	private Logger logger = null;
@@ -265,16 +268,16 @@ public class EISArtifact extends Artifact {
 	}));
 	
 	static Set<String> step_obs_prop = new HashSet<String>( Arrays.asList(new String[] {
-//			"entity",
-//			"fPosition",
-//			"lastAction",
-//			"lastActionParam",
-//			"lat",
-//			"lon",
-//			"requestAction",
-//			"team",
-//			"timestamp",		
-//			"auctionJob",		
+		"entity",
+		"fPosition",
+		"lastAction",
+		"lastActionParam",
+		"lat",
+		"lon",
+		"requestAction",
+		"team",
+		"timestamp",		
+		"auctionJob",	// Fim	
 		"chargingStation",
 		"shop",			
 		"storage",
@@ -290,7 +293,7 @@ public class EISArtifact extends Artifact {
 		"pricedJob",
 		"lastActionResult",
 		"routeLength",
-		//"route",
+		"route", // TB
 	}));
 
 }

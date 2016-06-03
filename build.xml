@@ -28,7 +28,7 @@
 		<java classname="massim.server.Server" failonerror="true" fork="yes"
 			dir="${basedir}">
 			<classpath refid="project.classpath" />
-			<arg line="--conf conf/test-completescenario/2015-complete-3sims.xml" />
+			<arg line="--conf conf/team-g1-completescenario/2016-complete-3sims.xml" />
 			<!-- jvmarg line="-Xmx500M -Xss8M"/ -->
 		</java>
 	</target>
@@ -47,7 +47,7 @@
 		<java classname="massim.javaagents.App" failonerror="true" fork="yes"
 			dir="${basedir}">
 			<classpath refid="project.classpath" />
-			<arg line="./conf/team-b/javaagentsconfig.xml" />
+			<arg line="./conf/team-g1/javaagentsconfig.xml" />
 		</java>
 	</target>
 

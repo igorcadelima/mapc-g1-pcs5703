@@ -1,26 +1,4 @@
-// specific plans for cars
+// specific beliefs for cars
 
-// specific plans for motorcycles
-
-!run.
-
-+!run
-<-  
-    !buy_item(tool2,1);
-
-    !goto(workshop1,0);
-    !all_at([vehicle2,vehicle3,vehicle4],workshop1);
-    
-    // set the step for assemble
-    ?step(S); AS = S+3;
-    .broadcast(tell,assemble_step(AS));
-    !wait_skip( step(AS) );
-    !assemble(material3);
-    ?pricedJob(JobId,Storage,Begin,End,Reward,Items);
-    !goto(Storage,0);
-    !deliver_job(JobId);
-    ?step(NS);
-    .print("Job delivered!!!!! at step ", NS);
-      
-	!skip_forever;    
-.
++charge(C) : C < 100 & not .desire(charge) <- 	.print("Sou um carro e estou iniciando processo de carga da bateria...");
+												!charge.
