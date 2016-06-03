@@ -1,0 +1,3 @@
+<simulation-server>
+	<network-agent backlog="10" port="12300" />
+</simulation-server>
