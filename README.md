@@ -1,6 +1,6 @@
 # Source Code for MAPC 2016
 
-### Members of the group
+### Members
   - [Eduardo Bertassi]
   - [Igor C. A. de Lima]
   - [Rosalia Caya]
