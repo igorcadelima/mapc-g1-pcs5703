@@ -1,4 +1,4 @@
-# Group 1 for the MAPC in the PCS 5703 discipline (2016.1) offered at Poli-USP
+# Source Code for MAPC 2016
 
 ### Members of the group
   - [Eduardo Bertassi]
